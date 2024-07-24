@@ -1,0 +1,23 @@
+.navbar {
+    padding-left: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.navbar li {
+    list-style-type: none;
+}
+
+.navbar a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+
+.tab {
+    display:inline-block; 
+    margin-left: 5vw; 
+}
