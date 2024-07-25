@@ -4,12 +4,12 @@ function Nav() {
     return (
         <nav>
             <ul class="navbar">
-                <li><a href="index.html"><span class="tab"/>Home<span class="tab"/></a></li>
-                <li><a href="todo.html"><span class="tab"/>About<span class="tab"/></a></li>
-                <li><a href="todo.html"><span class="tab"/>Menu<span class="tab"/></a></li>
-                <li><a href="todo.html"><span class="tab"/>Reservations<span class="tab"/></a></li>
-                <li><a href="todo.html"><span class="tab"/>Order Online<span class="tab"/></a></li>
-                <li><a href="todo.html"><span class="tab"/>Login<span class="tab"/></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="todo.html">About</a></li>
+                <li><a href="todo.html">Menu</a></li>
+                <li><a href="todo.html">Reservations</a></li>
+                <li><a href="todo.html">Order Online</a></li>
+                <li><a href="todo.html">Login</a></li>
             </ul>
         </nav>
     );

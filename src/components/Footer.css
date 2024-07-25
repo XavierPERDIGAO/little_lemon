@@ -1,24 +1,25 @@
 .footer {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-
-.footer-grid {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 20px;
+    display: grid;
+    text-align: center;
+    align-items: start;
+    padding-left: 12.5vw;
+    padding-right: 12.5vw;
+    width: 75vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #495E57;
 }
 
 .footer-column {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: left;
-    gap: 10px;
+    display: grid;
 }
 
 .footer-column li {
     list-style-type: none;
+    padding-bottom: 1vh;
+    color: white;
+    font-family: "Karla";
+    font-size: 1.125em; /* 18 */
 }
 
 .footer-column ul {
@@ -28,5 +29,46 @@
 .footer-column a {
     display: block;
     text-decoration: none;
-    color: black;
+    color: white;
+}
+
+.footer-column h3 {
+    color: white;
+    font-family: "Karla";
+    font-size: 1.25em; /* 20 */
+    font-weight: 800; /* Extra bold */
+}
+
+/* Smartphones */
+@media screen and (max-width: 767px) {
+    .footer {
+        grid-template-rows: auto auto auto auto;
+        gap: 20px;
+    }
+
+    .footer figure {
+        text-align: center;
+    }
+
+    .footer-column {
+        grid-template-rows: auto auto;
+    }
+
+    .footer-column h3 {
+        height: 30px;
+    }
+}
+
+/* Others */
+@media screen and (min-width: 768px) {
+    .footer {
+        grid-template-columns: auto 1fr 1fr 1fr;
+        text-align: left;
+        gap: 20px;
+    }
+
+    .footer-column {
+        grid-template-rows: auto auto;
+        gap: 20px;
+    }
 }

@@ -1,23 +1,38 @@
 .navbar {
     padding-left: 0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    display: grid;
 }
 
 .navbar li {
+    text-align: center;
     list-style-type: none;
 }
 
 .navbar a {
-    display: inline-block;
     text-decoration: none;
-    text-align: center;
     font-weight: bold;
     color: black;
+    font-family: "Karla";
+    font-size: 1.125em; /* 18 */
 }
 
-.tab {
-    display:inline-block; 
-    margin-left: 5vw; 
+@media screen and (max-width: 991px) {
+    .navbar {
+        grid-template-rows: repeat(6, 1fr);
+        gap: 20px;
+    }
+
+    .navbar a {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .navbar {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .navbar a {
+        display: inline-block;
+    }
 }

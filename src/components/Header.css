@@ -1,5 +1,26 @@
 .header {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    display: grid;
+    align-items: center;
+    margin-left: 12.5vw;
+    max-width: 75vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Smartphone & Tablets */
+@media screen and (max-width: 991px) {
+    .header {
+        grid-template-rows: 1fr 6fr;
+    }
+
+    .header figure {
+        text-align: center;
+    }
+}
+
+/* Others */
+@media screen and (min-width: 992px) {
+    .header {
+        grid-template-columns: 1fr 6fr;
+    }
 }
