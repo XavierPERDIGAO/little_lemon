@@ -1,17 +1,28 @@
 import './App.css';
 
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Main from './components/Main';
+import NoPage from './pages/NoPage';
+import Booking from './pages/Booking';
+import Home from './pages/Home'
+import Layout from './pages/Layout'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <Header/>
-      <Main/>
-      <Footer/>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="booking" element={<Booking />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
     </>
   );
 }
+
+// <Route path="blogs" element={<Blogs />} />
+// <Route path="*" element={<NoPage />} />
 
 export default App;

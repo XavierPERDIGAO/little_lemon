@@ -1,0 +1,75 @@
+.hero-section {
+    display: grid;
+    align-items: start;
+    padding-left: 12.5vw;
+    padding-right: 12.5vw;
+    width: 75vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #495E57;
+}
+
+.hero-section h1 {
+    color: #EE9972;
+    font-family: "Markazi Text";
+    font-size: 4em; /* 64 */
+    font-weight: normal;
+}
+
+.hero-section h2 {
+    color: white;
+    font-family: "Markazi Text";
+    font-size: 2.5em; /* 40 */
+    font-weight: normal;
+}
+
+.hero-section p {
+    color: white;
+    font-family: "Karla";
+    font-size: 1.125em; /* 18 */
+    font-weight: bold;
+    padding-top: 2vh;
+    max-width: 75vw;
+}
+
+.hero-section figure {
+    text-align: center;
+}
+
+button {
+    margin-top: 2vh;
+    padding: 10px;
+    background: #F4CE14;
+    border-radius: 16px;
+    color: black;
+    font-family: "Karla";
+    font-size: 1.125em; /* 18 */
+    font-weight: bold;
+}
+
+/* Smartphones & Tablets */
+@media screen and (max-width: 991px) {
+    .hero-section {
+        grid-template-rows: 1fr auto;
+        text-align: left;
+        gap: 40px;
+    }
+
+    .hero-section img {
+        max-width: 75vw;
+    }
+}
+
+
+/* Others */
+@media screen and (min-width: 992px) {
+    .hero-section  {
+        grid-template-columns: 1fr 3fr;
+        text-align: left;
+        gap: 20px;
+    }
+    
+    .hero-section img {
+        max-width: 377px;
+    }
+}

@@ -1,26 +1,28 @@
 import Logo from '../images/LogoFooter.png'
 import './Footer.css'
 
+import { Link } from "react-router-dom";
+
 function Footer() {
     return (
-        <footer class="footer">
+        <footer className="footer">
             <figure>
                 <img src={Logo} alt="footer Little Lemon logo" />
             </figure>
-            <div class="footer-column">
+            <div className="footer-column">
                 <h3>Doormat Navigation</h3>
                 <nav>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="todo.html">About</a></li>
-                        <li><a href="todo.html">Menu</a></li>
-                        <li><a href="todo.html">Reservations</a></li>
-                        <li><a href="todo.html">Order Online</a></li>
-                        <li><a href="todo.html">Login</a></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/about">About</Link></li>
+                        <li><Link to="/menu">Menu</Link></li>
+                        <li><Link to="/reservations">Reservations</Link></li>
+                        <li><Link to="/order">Order Online</Link></li>
+                        <li><Link to="/login">Login</Link></li>
                     </ul>
                 </nav>
             </div>
-            <div class="footer-column">
+            <div className="footer-column">
                 <h3>Contact</h3>
                 <ul>
                     <li>Adress</li>
@@ -28,7 +30,7 @@ function Footer() {
                     <li>Email</li>
                 </ul>
             </div>
-            <div class="footer-column">
+            <div className="footer-column">
                 <h3>Social Media Links</h3>
                 <ul>
                     <li>Facebook</li>
