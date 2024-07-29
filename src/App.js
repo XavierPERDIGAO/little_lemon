@@ -1,5 +1,6 @@
 import './App.css';
 
+import ConfirmedBooking from './pages/ConfirmedBooking';
 import NoPage from './pages/NoPage';
 import Booking from './pages/Booking';
 import Home from './pages/Home'
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="booking" element={<Booking />} />
+          <Route path="confirmedBooking" element={<ConfirmedBooking />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
