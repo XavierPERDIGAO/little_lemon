@@ -36,17 +36,6 @@
     text-align: center;
 }
 
-button {
-    margin-top: 2vh;
-    padding: 10px;
-    background: #F4CE14;
-    border-radius: 16px;
-    color: black;
-    font-family: "Karla";
-    font-size: 1.125em; /* 18 */
-    font-weight: bold;
-}
-
 /* Smartphones & Tablets */
 @media screen and (max-width: 991px) {
     .hero-section {

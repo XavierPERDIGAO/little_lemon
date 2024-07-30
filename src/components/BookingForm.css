@@ -1,5 +1,42 @@
 form {
     display: grid;
-    max-width: 200px;
-    gap: 20px;
+    gap: 30px;
+    margin-top: 20px;
+    max-width: 400px;
+}
+
+.form {
+    display: grid;
+    align-items: center;
+    padding-left: 12.5vw;
+    padding-right: 12.5vw;
+    width: 75vw;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.field {
+    display: grid;
+    gap: 5px;
+}
+
+.field label {
+    font-family: "Karla";
+    font-size: 1em; /* 16 */
+    font-weight: 800; /* Extra bold */
+}
+
+input, select {
+    width: 100%;
+    padding: 8px 20px;
+    box-sizing: border-box;
+    font-family: "Karla";
+    font-size: 1.125em; /* 18 */
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+    font-family: "Karla";
+    font-size: 1em; /* 16 */
 }

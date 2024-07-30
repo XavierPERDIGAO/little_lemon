@@ -1,5 +1,5 @@
 const NoPage = () => {
-    return <h1>404 - Not found</h1>;
+    return <section className="page"><h3 class="middle">404 - Not found</h3></section>;
   };
   
   export default NoPage;

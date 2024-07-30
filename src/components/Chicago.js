@@ -7,6 +7,7 @@ function Chicago() {
     return (
         <section className="chicago">
             <div>
+                <h2>About</h2>
                 <p>Welcome to Little Lemon, a new concept from celebrated chef Mario Blank and Adrian Estevez.</p>
                 <p>Inspired by Mediterranean's vibrant food, colors, and culture, Little Lemon is a place of discovery – of bold flavors and new culinary experiences – but also where the genuine warmth of Spanish hospitality will embrace you.</p>
                 <p>
