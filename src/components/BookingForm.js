@@ -71,7 +71,7 @@ function BookingForm(props) {
             <h2>Find a table for any occasion</h2>
             <form onSubmit={handleSubmit}>
                 <div className='field'>
-                    <label htmlFor="res-date">Choose date</label>
+                    <label htmlFor="res-date" aria-label="On Click">Choose date</label>
                     <input type="date" id="res-date"
                         value={date}
                         onChange={e => {
@@ -89,7 +89,7 @@ function BookingForm(props) {
                 </div>
 
                 <div className='field'>
-                    <label htmlFor="res-time">Choose time</label>
+                    <label htmlFor="res-time" aria-label="On Click">Choose time</label>
                     <select id="res-time"
                             value={time}
                             onChange={e => {
@@ -108,7 +108,7 @@ function BookingForm(props) {
                 </div>
 
                 <div className='field'>
-                    <label htmlFor="guests">Number of guests</label>
+                    <label htmlFor="guests" aria-label="On Click">Number of guests</label>
                     <input type="number" placeholder="1"
                         id="guests"
                         value={guests}
@@ -126,7 +126,7 @@ function BookingForm(props) {
                 </div>
 
                 <div className='field'>
-                    <label htmlFor="occasion">Occasion</label>
+                    <label htmlFor="occasion" aria-label="On Click">Occasion</label>
                     <select id="occasion"
                             value={occasion}
                             onChange={e => setOccasion(e.target.value)}>
@@ -136,7 +136,7 @@ function BookingForm(props) {
                     </select>
                 </div>
 
-                <button id="submit-button" type="submit" disabled={!validate()} aria-label="On Click">Make your reservation</button>
+                <button id="submit-button" type="submit" disabled={!validate()}>Make your reservation</button>
             </form>
         </section>
     );
